@@ -1,0 +1,123 @@
+ ul.img-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        ul.img-list li {
+            display: inline-block;
+            height: auto;
+            margin: 0 1em 1em 0;
+            position: relative;
+            width: 100%;
+        }
+        
+        span.text-content {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            cursor: pointer;
+            display: table;
+            height: auto;
+            left: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+			margin:2px;
+            /*opacity: 0;*/
+            -webkit-transition: opacity 500ms;
+            -moz-transition: opacity 500ms;
+            -o-transition: opacity 500ms;
+            transition: opacity 500ms;
+        }
+        
+        span.text-content span {
+			font-size: 15px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        ul.img-list li:hover span.text-content {
+            opacity: 1;
+        }
+        
+        a:link,
+        a:hover,
+        a:active {
+            text-decoration: none;
+            color: #FFF;
+            opacity: 0.9;
+        }
+        /* responsive text queries */
+        
+        @media screen and (max-width: 992px) {
+            p,
+            .btn,
+            input,
+            div,
+            span,
+            h4 {
+                font-size: 95%;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            h4 {
+                font-size: 17px;
+				text-align:center;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            p,
+            .btn,
+            input,
+            div,
+            span,
+            h4 {
+                font-size: 90%;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            h4 {
+                font-size: 15px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {}
+        
+        #macrosectiontext {
+            text-decoration: none;
+            color: white;
+            position: relative;
+            font: Arial, sans-serif;          
+            background-color: transparent;
+            padding: 5px;
+			text-align:center;
+        }
+        
+        #macrosectiontext a:link {
+            color: white;
+        }
+        
+        #macrosectiontext a:visited,
+        #macrosectiontext a:hover,
+        #macrosectiontext a:active {
+            color: white;
+          
+        }
